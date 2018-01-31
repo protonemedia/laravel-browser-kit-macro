@@ -6,7 +6,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/pascalbaljetmedia/laravel-browser-kit-macro.svg?style=flat-square)](https://scrutinizer-ci.com/g/pascalbaljetmedia/laravel-browser-kit-macro)
 [![Total Downloads](https://img.shields.io/packagist/dt/pbmedia/laravel-browser-kit-macro.svg?style=flat-square)](https://packagist.org/packages/pbmedia/laravel-browser-kit-macro)
 
-This package prevents a User from being logged in more than once. It destroys the previous session when a User logs in and thereby allowing only one session per user. It assumes you use Laravel's [Authentication](https://laravel.com/docs/5.5/authentication) features.
+This package allows you to use the [Browser Kit features](https://github.com/laravel/browser-kit-testing) in more modern Laravel installations.
 
 ## Requirements
 * Laravel 5.4+
@@ -23,6 +23,19 @@ composer require pbmedia/laravel-browser-kit-macro --dev
 
 ## Usage
 
+This package adds a `browserKit` method to the `TestResponse` class. It accepts a Closure which receives the [Browser Kit TestCase](https://github.com/laravel/browser-kit-testing/blob/master/src/TestCase.php) as its first argument.
+
+```php
+/** @test */
+public function it_presents_a_registration_form()
+{
+    $this->get('register')
+        ->assertStatus(200)
+        ->browserKit(function ($test) {
+            $test->seeElement('input', ['name' => 'email']);
+        });
+}
+```
 
 ## Testing
 
