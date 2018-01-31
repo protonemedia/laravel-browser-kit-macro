@@ -32,7 +32,7 @@ class BrowserKitMacroServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             TestResponse::macro('browserKit', function ($callback) {
                 $testCase = (new BrowserKitTestCase)
-                    ->setApp(app())
+                    ->setApp($this->app)
                     ->setResponse($this->baseResponse);
 
                 $callback($testCase);
