@@ -10,9 +10,11 @@ env:
     - COMPOSER_FLAGS="--prefer-lowest"
     - COMPOSER_FLAGS=""
 
-before_script:
+before_install:
   - travis_retry composer self-update
-  - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction
+
+install:
+  - travis_retry composer update --prefer-source $COMPOSER_FLAGS
 
 script:
   - phpunit --coverage-text --coverage-clover=coverage.clover
