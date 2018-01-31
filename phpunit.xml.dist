@@ -11,12 +11,12 @@
          stopOnFailure="false">
     <testsuites>
         <testsuite name="Test Suite">
-            <directory>tests</directory>
+            <directory>./tests</directory>
         </testsuite>
     </testsuites>
     <filter>
-        <whitelist>
-            <directory suffix=".php">src/</directory>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./app</directory>
         </whitelist>
     </filter>
     <logging>
