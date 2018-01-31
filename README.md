@@ -21,6 +21,11 @@ You can install the package via composer:
 composer require pbmedia/laravel-browser-kit-macro --dev
 ```
 
+If you're using Laravel 5.4, add the Service Provider to your `config/app.php` file:
+
+```php
+Pbmedia\LaravelBrowserKitMacro\BrowserKitMacroServiceProvider::class,
+
 ## Usage
 
 This package adds a `browserKit` method to the `TestResponse` class. It accepts a Closure which receives the [Browser Kit TestCase](https://github.com/laravel/browser-kit-testing/blob/master/src/TestCase.php) as its first argument.
