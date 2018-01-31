@@ -25,6 +25,7 @@ If you're using Laravel 5.4, add the Service Provider to your `config/app.php` f
 
 ```php
 Pbmedia\LaravelBrowserKitMacro\BrowserKitMacroServiceProvider::class,
+```
 
 ## Usage
 
