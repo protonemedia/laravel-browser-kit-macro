@@ -6,7 +6,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/pascalbaljetmedia/laravel-browser-kit-macro.svg?style=flat-square)](https://scrutinizer-ci.com/g/pascalbaljetmedia/laravel-browser-kit-macro)
 [![Total Downloads](https://img.shields.io/packagist/dt/pbmedia/laravel-browser-kit-macro.svg?style=flat-square)](https://packagist.org/packages/pbmedia/laravel-browser-kit-macro)
 
-This package allows you to use the [Browser Kit features](https://github.com/laravel/browser-kit-testing) in more modern Laravel installations.
+This package allows you to seamlessly use the [Browser Kit features](https://github.com/laravel/browser-kit-testing) in more modern Laravel installations.
 
 ## Requirements
 * Laravel 5.4+
