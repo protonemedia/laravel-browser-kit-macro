@@ -1,6 +1,11 @@
 {
     "name": "pbmedia/laravel-browser-kit-macro",
     "description": "A macro to use the Laravel 5.3 testing layer inside your Laravel 5.4+ tests",
+    "keywords": [
+        "pascalbaljetmedia",
+        "laravel-browser-kit"
+    ],
+    "homepage": "https://github.com/pascalbaljetmedia/laravel-browser-kit-macro",
     "type": "library",
     "require": {
         "laravel/browser-kit-testing": "^2.0",
@@ -8,6 +13,7 @@
         "illuminate/support": "5.4.* || 5.5.* || 5.6.*"
     },
     "require-dev": {
+        "orchestra/testbench": "^3.4",
         "phpunit/phpunit": "~5.0|~6.0"
     },
     "license": "MIT",
@@ -17,10 +23,21 @@
             "email": "pascal@pascalbaljetmedia.com"
         }
     ],
-     "autoload": {
+    "autoload": {
         "psr-4": {
             "Pbmedia\\LaravelBrowserKitMacro\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pbmedia\\LaravelBrowserKitMacro\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
     },
     "extra": {
         "laravel": {

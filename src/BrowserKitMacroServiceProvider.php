@@ -33,7 +33,7 @@ class BrowserKitMacroServiceProvider extends ServiceProvider
             TestResponse::macro('browserKit', function ($callback) {
                 $testCase = (new BrowserKitTestCase)
                     ->setApp(app())
-                    ->setResponse($this);
+                    ->setResponse($this->baseResponse);
 
                 $callback($testCase);
 
