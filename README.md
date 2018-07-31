@@ -9,8 +9,8 @@
 This package allows you to seamlessly use the [Browser Kit features](https://github.com/laravel/browser-kit-testing) in more modern Laravel installations.
 
 ## Requirements
-* Laravel 5.4+
-* PHP 7.0, 7.1 and 7.2 supported.
+* Laravel 5.6 only, use v1.0 for Laravel 5.4 and 5.5
+* PHP 7.1 and 7.2 supported.
 * Support for [Package Discovery](https://laravel.com/docs/5.5/packages#package-discovery).
 
 ## Installation
@@ -21,7 +21,7 @@ You can install the package via composer:
 composer require pbmedia/laravel-browser-kit-macro --dev
 ```
 
-If you're using Laravel 5.4, add the Service Provider to your `config/app.php` file:
+If you're not using Package Discovery, add the Service Provider to your `config/app.php` file:
 
 ```php
 Pbmedia\LaravelBrowserKitMacro\BrowserKitMacroServiceProvider::class,
