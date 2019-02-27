@@ -8,13 +8,13 @@
     "homepage": "https://github.com/pascalbaljetmedia/laravel-browser-kit-macro",
     "type": "library",
     "require": {
-        "laravel/browser-kit-testing": "^4.0",
-        "illuminate/http": "^5.7",
-        "illuminate/support": "^5.7"
+        "laravel/browser-kit-testing": "^5.0",
+        "illuminate/http": "^5.8",
+        "illuminate/support": "^5.8"
     },
     "require-dev": {
         "orchestra/testbench": "^3.7",
-        "phpunit/phpunit": "~7.0"
+        "phpunit/phpunit": "~7.5"
     },
     "license": "MIT",
     "authors": [
