@@ -2,35 +2,35 @@
     "name": "pbmedia/laravel-browser-kit-macro",
     "description": "A macro to use the Laravel 5.3 testing layer inside your Laravel 5.4+ tests",
     "keywords": [
-        "pascalbaljetmedia",
+        "protone-media",
         "laravel-browser-kit"
     ],
-    "homepage": "https://github.com/pascalbaljetmedia/laravel-browser-kit-macro",
+    "homepage": "https://github.com/protonemedia/laravel-browser-kit-macro",
     "type": "library",
     "require": {
-        "laravel/browser-kit-testing": "^5.0",
-        "illuminate/http": "^5.8",
-        "illuminate/support": "^5.8"
+        "laravel/browser-kit-testing": "^5.0 || ^6.0",
+        "illuminate/http": "^6.0 || ^7.0 || ^8.0",
+        "illuminate/support": "^6.0 || ^7.0 || ^8.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^3.7",
-        "phpunit/phpunit": "~7.5"
+        "orchestra/testbench": "^4.0 || ^5.0 || ^6.0",
+        "phpunit/phpunit": "^8.0"
     },
     "license": "MIT",
     "authors": [
         {
             "name": "Pascal Baljet",
-            "email": "pascal@pascalbaljetmedia.com"
+            "email": "pascal@protone.media"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Pbmedia\\LaravelBrowserKitMacro\\": "src/"
+            "ProtoneMedia\\LaravelBrowserKitMacro\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Pbmedia\\LaravelBrowserKitMacro\\Tests\\": "tests"
+            "ProtoneMedia\\LaravelBrowserKitMacro\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -39,10 +39,12 @@
     "config": {
         "sort-packages": true
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "extra": {
         "laravel": {
             "providers": [
-                "Pbmedia\\LaravelBrowserKitMacro\\BrowserKitMacroServiceProvider"
+                "ProtoneMedia\\LaravelBrowserKitMacro\\BrowserKitMacroServiceProvider"
             ]
         }
     }

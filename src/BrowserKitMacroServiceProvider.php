@@ -1,9 +1,10 @@
 <?php
 
-namespace Pbmedia\LaravelBrowserKitMacro;
+namespace ProtoneMedia\LaravelBrowserKitMacro;
 
-use Illuminate\Foundation\Testing\TestResponse;
+use Illuminate\Foundation\Testing\TestResponse as LegacyTestResponse;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Testing\TestResponse as ModernTestResponse;
 
 class BrowserKitMacroServiceProvider extends ServiceProvider
 {
@@ -14,7 +15,6 @@ class BrowserKitMacroServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
     }
 
     /**
@@ -30,7 +30,9 @@ class BrowserKitMacroServiceProvider extends ServiceProvider
         }
 
         if ($this->app->runningInConsole()) {
-            TestResponse::macro('browserKit', function ($callback) {
+            $class = class_exists(ModernTestResponse::class) ? ModernTestResponse::class : LegacyTestResponse::class;
+
+            $class::macro('browserKit', function ($callback) {
                 $testCase = (new BrowserKitTestCase)
                     ->setApp(app())
                     ->setResponse($this->baseResponse);

@@ -1,6 +1,6 @@
 <?php
 
-namespace Pbmedia\LaravelBrowserKitMacro;
+namespace ProtoneMedia\LaravelBrowserKitMacro;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Http\Response;

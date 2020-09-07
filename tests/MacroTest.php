@@ -1,10 +1,11 @@
 <?php
 
-namespace Pbmedia\LaravelBrowserKitMacro\Tests;
+namespace ProtoneMedia\LaravelBrowserKitMacro\Tests;
 
-use Illuminate\Foundation\Testing\TestResponse;
+use Illuminate\Foundation\Testing\TestResponse as LegacyTestResponse;
+use Illuminate\Testing\TestResponse as ModernTestResponse;
 use Laravel\BrowserKitTesting\TestCase;
-use Pbmedia\LaravelBrowserKitMacro\BrowserKitMacroServiceProvider;
+use ProtoneMedia\LaravelBrowserKitMacro\BrowserKitMacroServiceProvider;
 
 class MacroTest extends \Orchestra\Testbench\TestCase
 {
@@ -22,7 +23,11 @@ class MacroTest extends \Orchestra\Testbench\TestCase
 
         $response = $this->get('/');
 
-        $this->assertInstanceOf(TestResponse::class, $response);
+        if (class_exists(ModernTestResponse::class)) {
+            $this->assertInstanceOf(ModernTestResponse::class, $response);
+        } else {
+            $this->assertInstanceOf(LegacyTestResponse::class, $response);
+        }
 
         $response->browserKit(function ($test) {
             $this->assertInstanceOf(TestCase::class, $test);
