@@ -10,7 +10,7 @@ This package allows you to seamlessly use the [Browser Kit features](https://git
 
 ## Requirements
 * Laravel 6.0 or higher.
-* PHP 7.2 or higher.
+* PHP 7.3 or higher.
 * Support for [Package Discovery](https://laravel.com/docs/5.5/packages#package-discovery).
 
 ## Installation
