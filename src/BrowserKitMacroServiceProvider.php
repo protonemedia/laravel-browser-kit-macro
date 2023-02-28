@@ -33,7 +33,7 @@ class BrowserKitMacroServiceProvider extends ServiceProvider
             $class = class_exists(ModernTestResponse::class) ? ModernTestResponse::class : LegacyTestResponse::class;
 
             $class::macro('browserKit', function ($callback) {
-                $testCase = (new BrowserKitTestCase)
+                $testCase = (new BrowserKitTestCase('browser-kit'))
                     ->setApp(app())
                     ->setResponse($this->baseResponse);
 
