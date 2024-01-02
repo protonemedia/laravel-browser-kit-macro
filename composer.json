@@ -8,15 +8,15 @@
     "homepage": "https://github.com/protonemedia/laravel-browser-kit-macro",
     "type": "library",
     "require": {
-        "php": "^8.0 || ^8.1 || ^8.2",
-        "laravel/browser-kit-testing": "^6.0",
-        "illuminate/http": "^9.0",
-        "illuminate/support": "^9.0",
+        "php": "^8.1 || ^8.2 || ^8.3",
+        "laravel/browser-kit-testing": "^7.0",
+        "illuminate/http": "^10.0",
+        "illuminate/support": "^10.0",
         "symfony/dom-crawler": "^6.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^7.0",
-        "phpunit/phpunit": "^9.4"
+        "orchestra/testbench": "^8.0",
+        "phpunit/phpunit": "^10.4"
     },
     "license": "MIT",
     "authors": [
