@@ -8,7 +8,7 @@
     "homepage": "https://github.com/protonemedia/laravel-browser-kit-macro",
     "type": "library",
     "require": {
-        "php": "^8.3 || ^8.2",
+        "php": "^8.4 || ^8.3 || ^8.2",
         "laravel/browser-kit-testing": "^7.0",
         "illuminate/http": "^10.0|^11.0",
         "illuminate/support": "^10.0|^11.0",
