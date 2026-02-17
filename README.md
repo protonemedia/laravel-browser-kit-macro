@@ -8,7 +8,7 @@
 This package allows you to seamlessly use the [Browser Kit features](https://github.com/laravel/browser-kit-testing) in more modern Laravel installations.
 
 ## Requirements
-* Laravel 10
+* Laravel 11
 * PHP 8.2 or higher
 
 ## Sponsor Us
