@@ -52,9 +52,3 @@ public function it_presents_a_registration_form()
 - **Dev-only:** it’s intended for testing, not production code.
 - **Macro availability:** if the macro is missing, verify the provider is registered / package discovery is enabled.
 - **Callback expectations:** the `$test` object is BrowserKit-style; use BrowserKit methods (`seeElement`, etc.).
-
-## Testing
-
-```bash
-composer test
-```
