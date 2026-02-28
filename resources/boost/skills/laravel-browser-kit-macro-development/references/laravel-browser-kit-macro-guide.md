@@ -1,19 +1,15 @@
-# laravel-browser-kit-macro development guide
+# Laravel Browser Kit Macro Reference
 
-For full documentation, see the README: https://github.com/protonemedia/laravel-browser-kit-macro#readme
+Complete reference for `protonemedia/laravel-browser-kit-macro`. Full documentation: https://github.com/protonemedia/laravel-browser-kit-macro#readme
 
-## At a glance
-Adds a macro to use classic **BrowserKit**-style testing helpers in modern Laravel testing.
+## Start Here
+- README / docs: https://github.com/protonemedia/laravel-browser-kit-macro#readme
 
-## Local setup
-- Install dependencies: `composer install`
-- Keep the dev loop package-focused (avoid adding app-only scaffolding).
+## Notes for AI Assistants
+- Treat the README as the source of truth for the supported public API.
+- Keep changes backward-compatible unless the change is explicitly a breaking change.
 
 ## Testing
-- Run: `composer test` (preferred) or the repository’s configured test runner.
-- Add regression tests for bug fixes.
+- Run the repository test command (see README / composer scripts).
 
-## Notes & conventions
-- Keep compatibility with Laravel's testing layer (TestResponse/macros).
-- Prefer adding tests that demonstrate the macro behavior on responses.
-- Don't couple to application routes; keep fixtures minimal.
+For detailed usage examples and the full API surface, refer to the README.

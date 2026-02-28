@@ -1,14 +1,8 @@
-{{--
-  Laravel Boost guidelines (repository core)
+{{-- Laravel Browser Kit Macro Guidelines for AI Code Assistants --}}
+{{-- Source: https://github.com/protonemedia/laravel-browser-kit-macro --}}
+{{-- License: MIT | (c) ProtoneMedia --}}
 
-  This file intentionally stays small: it links this repository to its package-specific Boost skill.
---}}
+## Laravel Browser Kit Macro
 
-<section>
-    <h2>Repository development skill</h2>
-
-    <p>
-        When working on this repository, activate the <code>laravel-browser-kit-macro-development</code> skill.
-        It contains package-specific conventions, testing notes, and common pitfalls.
-    </p>
-</section>
+- Adds a BrowserKit-style testing macro for Laravel.
+- Always activate the `laravel-browser-kit-macro-development` skill when making package-specific changes.
