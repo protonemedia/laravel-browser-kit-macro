@@ -4,5 +4,7 @@
 
 ## Laravel Browser Kit Macro
 
-- Adds a BrowserKit-style testing macro for Laravel.
+- Adds a `browserKit()` helper to Laravel `TestResponse` to reuse BrowserKit assertions in modern Laravel apps.
 - Always activate the `laravel-browser-kit-macro-development` skill when making package-specific changes.
+- For installation, provider registration, and usage examples, consult:
+  - `resources/boost/skills/laravel-browser-kit-macro-development/references/laravel-browser-kit-macro-guide.md`

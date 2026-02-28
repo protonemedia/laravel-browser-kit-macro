@@ -1,6 +1,6 @@
 ---
 name: laravel-browser-kit-macro-development
-description: Development guidance for protonemedia/laravel-browser-kit-macro. Adds a BrowserKit-style testing macro for Laravel.
+description: Development guidance for protonemedia/laravel-browser-kit-macro (TestResponse::browserKit macro).
 license: MIT
 metadata:
   author: ProtoneMedia
@@ -9,18 +9,12 @@ metadata:
 
 # Laravel Browser Kit Macro Development
 
-## Overview
-Use this skill when changing package code, docs, tests, or release tooling for protonemedia/laravel-browser-kit-macro.
-
-## When to Activate
-- You are modifying code in this repository.
-- You are reviewing/triaging issues or PRs for this package.
-- You are preparing a release (version bump, tag, changelog).
+Use this skill when changing code/docs/tests in `protonemedia/laravel-browser-kit-macro`.
 
 ## Workflow
-1. Skim the README / docs to confirm the public contract.
-2. Read references/laravel-browser-kit-macro-guide.md for common patterns and pitfalls.
-3. Keep changes small, add/update tests when behavior changes, and avoid breaking API changes.
+1. Treat the README as the public contract (macro name, callback signature, provider registration).
+2. Consult `references/laravel-browser-kit-macro-guide.md` for usage patterns.
+3. Preserve developer ergonomics: the macro must remain available on `TestResponse`.
 
-## References
+## Reference
 - references/laravel-browser-kit-macro-guide.md
