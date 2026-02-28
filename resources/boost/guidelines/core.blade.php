@@ -4,7 +4,5 @@
 
 ## Laravel Browser Kit Macro
 
-- This project uses **Laravel Browser Kit Macro** (ProtoneMedia) in a Laravel application.
-- Activate the **`laravel-browser-kit-macro-development`** skill when you are **integrating, configuring, or using** this package in app code (controllers, jobs, tests, config, routes, Blade, etc.).
-- Use the reference doc for the package’s public API and common recipes:
-  - `resources/boost/skills/laravel-browser-kit-macro-development/references/laravel-browser-kit-macro-guide.md`
+- `protonemedia/laravel-browser-kit-macro.` helps you work with Laravel Browser Kit Macro in Laravel.
+- Always activate the `laravel-browser-kit-macro-development` skill when working with Laravel Browser Kit Macro configuration, integration, or any code that relies on this package.
