@@ -1,6 +1,6 @@
 # Laravel Browser Kit Macro Reference
 
-Complete reference for `protonemedia/laravel-browser-kit-macro`. Full documentation: https://github.com/protonemedia/laravel-browser-kit-macro#readme
+Complete reference for protonemedia/laravel-browser-kit-macro. Full documentation: https://github.com/protonemedia/laravel-browser-kit-macro#readme
 
 ## Start Here
 - README / docs: https://github.com/protonemedia/laravel-browser-kit-macro#readme
