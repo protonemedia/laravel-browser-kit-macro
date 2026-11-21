@@ -9,7 +9,7 @@ This package allows you to seamlessly use the [Browser Kit features](https://git
 
 ## Requirements
 * Laravel 12 or 13
-* PHP 8.2 or higher
+* PHP 8.3 or higher
 
 ## Sponsor Us
 
